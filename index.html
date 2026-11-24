@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etik Kemal Demir Finansal Danışmanlık</title>
+  <meta name="description" content="Etik Kemal Demir Finansal Danışmanlık – Web sitemiz yapım aşamasındadır.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --lacivert: #0f2540;
+      --lacivert-koyu: #0a1a2e;
+      --altin: #c9a45c;
+      --metin: #e8edf3;
+      --metin-soluk: #9fb0c4;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body { height: 100%; }
+
+    body {
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: radial-gradient(ellipse at top, var(--lacivert) 0%, var(--lacivert-koyu) 70%);
+      color: var(--metin);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 48px 20px;
+    }
+
+    .logo-yer {
+      width: clamp(80px, 20vw, 104px);
+      margin-bottom: 22px;
+    }
+    .logo-yer img { display: block; width: 100%; height: auto; }
+
+    h1 {
+      font-family: "Montserrat", system-ui, sans-serif;
+      font-weight: 700;
+      font-size: clamp(24px, 5vw, 40px);
+      line-height: 1.2;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      max-width: 720px;
+    }
+
+    .alt-baslik {
+      margin-top: 10px;
+      font-family: "Montserrat", system-ui, sans-serif;
+      font-weight: 600;
+      font-size: clamp(12px, 2.2vw, 15px);
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      color: var(--altin);
+    }
+
+    .ayirac {
+      width: 64px;
+      height: 1px;
+      background: var(--altin);
+      margin: 36px auto;
+      opacity: .7;
+    }
+
+    h2 {
+      font-weight: 500;
+      font-size: clamp(18px, 3vw, 22px);
+      margin-bottom: 12px;
+    }
+
+    p.aciklama {
+      color: var(--metin-soluk);
+      max-width: 520px;
+      font-size: 16px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px 20px;
+      font-size: 13px;
+      color: var(--metin-soluk);
+      border-top: 1px solid rgba(201, 164, 92, .15);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="logo-yer">
+      <img src="logo.png" alt="Etik Kemal Demir Finansal Danışmanlık">
+    </div>
+
+    <h1>Etik Kemal Demir</h1>
+    <div class="alt-baslik">Finansal Danışmanlık</div>
+
+    <div class="ayirac"></div>
+
+    <h2>Web sitemiz yapım aşamasındadır</h2>
+    <p class="aciklama">
+      Size daha iyi hizmet verebilmek için sitemizi yeniliyoruz.
+      Çok yakında yeni yüzümüzle buradayız.
+    </p>
+  </main>
+
+  <footer>
+    &copy; <span id="yil">2026</span> Etik Kemal Demir Finansal Danışmanlık. Tüm hakları saklıdır.
+  </footer>
+
+  <script>document.getElementById("yil").textContent = new Date().getFullYear();</script>
+</body>
+</html>
